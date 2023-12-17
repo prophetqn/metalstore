@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Product Type",
+        "handle": "product_type",
+        "type": "Lunar\\FieldTypes\\Dropdown",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {
+            "lookups": [
+                {"label": "Bar", "value": ""},
+                {"label": "Ingot", "value": ""},
+                {"label": "Coin", "value": ""}
+            ]
+        },
+        "required": true,
+        "searchable": false,
+        "filterable": true
+    },
+    {
+        "name": "Weight",
+        "handle": "weight",
+        "type": "Lunar\\FieldTypes\\Number",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {"max": "1000000", "min": "1"},
+        "required": true,
+        "searchable": false,
+        "filterable": false
+    },
+    {
+        "name": "Unit",
+        "handle": "unit",
+        "type": "Lunar\\FieldTypes\\Dropdown",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {
+            "lookups": [
+                {"label": "g", "value": ""},
+                {"label": "kg", "value": ""},
+                {"label": "oz", "value": ""}
+            ]
+        },
+        "required": true,
+        "searchable": false,
+        "filterable": false
+    },
+    {
+        "name": "Purity",
+        "handle": "purity",
+        "type": "Lunar\\FieldTypes\\Number",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {"max": "1000", "min": "1"},
+        "required": true,
+        "searchable": false,
+        "filterable": true
+    },
+    {
+        "name": "Metal",
+        "handle": "metal",
+        "type": "Lunar\\FieldTypes\\Dropdown",
+        "attribute_type": "Lunar\\Models\\Product",
+        "configuration": {
+            "lookups": [
+                {"label": "Gold", "value": ""},
+                {"label": "Silver", "value": ""},
+                {"label": "Platinum", "value": ""},
+                {"label": "Palladium", "value": ""}
+            ]
+        },
+        "required": true,
+        "searchable": true,
+        "filterable": true
+    }
+]
